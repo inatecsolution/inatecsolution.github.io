@@ -34,3 +34,9 @@ let interval = setInterval(function(){
         $finalMessage.style.transform = 'translateY(0)';
     }
 }, 1000);
+
+(function(){
+    $(function(){
+        $('#ventana-modal').modal()
+    });
+}());

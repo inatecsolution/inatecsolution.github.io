@@ -5461,8 +5461,8 @@ a.close.disabled {
 
 .modal-content {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  display: contents;
+  /* flex-direction: column; */
   width: 100%;
   pointer-events: auto;
   background-color: #fff;
@@ -6023,7 +6023,7 @@ a.close.disabled {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #fff;
+  /* color: #fff; */
   text-align: center;
 }
 
@@ -9543,7 +9543,7 @@ a.text-dark:hover, a.text-dark:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   z-index: 1;
 }
 
@@ -9825,5 +9825,9 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 50PX;
   color: #fff;
 }
+
+
+
+
 
 
