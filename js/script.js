@@ -1,15 +1,13 @@
-
-
 const $days = document.getElementById('days'),
-$hours = document.getElementById('hours'),
-$minutes = document.getElementById('minutes'),
-$seconds = document.getElementById('seconds'),
-$finalMessage = document.querySelector('.final-sms');
+    $hours = document.getElementById('hours'),
+    $minutes = document.getElementById('minutes'),
+    $seconds = document.getElementById('seconds'),
+    $finalMessage = document.querySelector('.final-sms');
 
 //Fecha a futuro
-const countdownDate = new Date('11 07, 2024 00:00:00').getTime();
+const countdownDate = new Date('11 09, 2024 18:30:00').getTime();
 
-let interval = setInterval(function(){
+let interval = setInterval(function () {
     //Obtener fecha actual y milisegundos
     const now = new Date().getTime();
 
@@ -18,9 +16,9 @@ let interval = setInterval(function(){
 
     //Calculos a dias-horas-minutos-segundos
     let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((distance % (1000 * 60 * 60 * 24 )) / (1000 * 60 * 60));
+    let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((distance % (1000 * 60 )) / (1000));
+    let seconds = Math.floor((distance % (1000 * 60)) / (1000));
 
     //Escribimos resultados
     $days.innerHTML = days;
@@ -29,14 +27,19 @@ let interval = setInterval(function(){
     $seconds.innerHTML = ('0' + seconds).slice(-2);
 
     //Cuando llegue a 0
-    if(distance < 0){
+    if (distance < 0) {
         clearInterval(interval);
         $finalMessage.style.transform = 'translateY(0)';
     }
 }, 1000);
 
-(function(){
-    $(function(){
+
+
+//función cargar modal
+(function () {
+    $(function () {
         $('#ventana-modal').modal()
     });
 }());
+
+

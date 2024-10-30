@@ -59,9 +59,10 @@
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav ml-auto py-0">
                 <a href="#home" class="nav-item nav-link active">XV Años Mariangel</a>
+                <a href="#gallery" class="nav-item nav-link">Galería</a>
                 <a href="#about" class="nav-item nav-link">Historia</a>
                 <a href="#story" class="nav-item nav-link">Cuándo y Donde</a>
-                <a href="#gallery" class="nav-item nav-link">Galería</a>
+
             </div>
 
             <div class="navbar-nav mr-auto py-0">
@@ -75,10 +76,9 @@
 
     <div class="modal" tabindex="-1" role="dialog" id="ventana-modal">
 
-        <div class="modal-dialog" role="document">
-            
-            <div class="modal-content" 
-            style="
+        <div class="modal-dialog"  role="document">
+
+            <div class="modal-content" style="
             width: 100%; 
             height: 100vh; 
             position: fixed; 
@@ -87,32 +87,35 @@
             display: flex; 
             justify-content: center; 
             align-items: center; 
-            z-index: 100;">
-                
-                <div class="modal-body">
+            z-index: 100;
+            background: linear-gradient(rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0.50)), url(img/backinicio.jpg) no-repeat center fixed; background-size: cover;">
+
+                <div class="modal-body" >
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                       
+
                         <div class="p-3" style="max-width: 900px;">
                             <h1 class="display-1 font-secondary text-dark mt-n3 mb-md-4">XV Mariangel</h1>
                             <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
-                                <h1 class="h-100 d-flex flex-column justify-content-center bg-secondary p-5" style="font-size: larger;">Te invita a celebrar con ella este gran día.</h1>
+                                <h1 class="h-100 d-flex flex-column justify-content-center  p-5"
+                                    style="font-size: larger;">Te invita a celebrar con ella este gran día.</h1>
                             </div>
                             <br>
-                            <button type="button" class="btn mx-auto" data-dismiss="modal" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
-                                <i class="fa-solid fa-envelope fa-beat display-1 text-dark"></i>
+                            <button type="button" class="btn mx-auto" data-dismiss="modal" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                                <!-- <i class="fa-solid fa-envelope fa-beat display-1 text-dark"></i> -->
+                                <i class="fa-solid fa-hat-cowboy fa-beat display-1 text-dark"></i>
                             </button>
                         </div>
                     </div>
-                    
-                </div> 
-
+                </div>
             </div>
-
         </div>
     </div>
 
 
-    <header class="container-fluid bg-dark text-white py-5">
+    <header class="container-fluid bg-dark text-white py-5"
+        style="background: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)), url(img/gallery-1.jpg) no-repeat center fixed; background-size: cover;">
+
         <div class="position-relative text-center">
             <br>
             <div class="section-title position-relative text-center">
@@ -158,65 +161,40 @@
         </div>
     </header>
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5 pb-5" id="home">
-        <div id="header-carousel" class="carousel slide carousel-fade " data-ride="carousel">
-            
-            <div class="carousel-inner">
-                
-                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center"
-                        style="background: fixed;">
-                        <a href="img/carousel-1.jpg" data-lightbox="gallery">
-                            <i class="fa fa-2x fa-plus fa-beat text-white"></i>
-                        </a>
-                    </div>
-                </div>
 
-                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center"
-                        style="background: fixed;">
-                        <a href="img/carousel-2.jpg" data-lightbox="gallery">
-                            <i class="fa fa-2x fa-plus fa-beat text-white"></i>
-                        </a>
-                    </div>
-                </div>
+
+    <!-- Gallery Start -->
+    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+            <h1 class="font-secondary display-4 text-white">Almy Mariangel Samayoa Vanegas</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
+                <a href="img/gallery-1.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
             </div>
-
-            <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
-                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
-                    <span class="carousel-control-prev-icon mt-3"></span>
-                </div>
-            </a>
-
-            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
-                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
-                    <span class="carousel-control-next-icon mt-3"></span>
-                </div>
-            </a>
-
         </div>
     </div>
-    <!-- Carousel End -->
+    <!-- Gallery End -->
 
     <!-- Historia -->
     <div class="container-fluid py-5" id="about">
         <div class="container py-5">
 
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 15px;">HISTORIA</h6>
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 15px;"></h6>
                 <i class="far fa-heart text-dark"></i>
             </div>
 
             <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
                 <div class="text-center text-md-center">
                     <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
-                        <p>El camino que conduce a un mundo nuevo de sueños, metas y esperanzas, un mundo de sueños
-                            realizados y afectos compartidos, ese es el camino que comienzo a caminar en esta noche que
-                            marcará un momento inolvidable para mi y mi familia.</p>
-                        <p>Espero que me puedas acompañar en este día tan especial</p>
+                        <p class="text-dark" style="font-size: 150%;">Te damos gracias SEÑOR por el don de la vida, ya que hace 15 años, nos enviaste un ángel,  nuestra amada <b> MARIÁNGEL</b>, llenando nuestras vidas de inmensa alegría.</p>
+                        <p class="text-dark" style="font-size: 150%;">Estamos llenos de gratitud y gozo que queremos compartir contigo, por eso te invitamos a celebrar sus 15 años y con tu valiosa presencia, hacer especial este momento de felicidad.</p>
                     </div>
                 </div>
             </div>
@@ -230,26 +208,10 @@
     <div class="container-fluid py-5" id="story">
         <div class="container pt-5 pb-3">
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 15px;">Cuándo y Dónde</h6>
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 10px;">Cuándo y Dónde</h6>
                 <i class="far fa-heart text-dark"></i>
             </div>
             <div class="container timeline position-relative p-0">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-center ">
-                        <i class="fa-solid fa-church fa-beat display-1 text-dark"></i>
-                    </div>
-
-                    <div class="col-md-6 text-center text-md-left">
-                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
-                            <h4 class="mb-2">CEREMONIA</h4>
-                            <p class="text-uppercase mb-2">25 de Noviembre</p>
-                            <p class="text-uppercase mb-2">19:30 HRS</p>
-                            <p class="m-0">Basílica Colegiata de Nuestra Señora de Guanajuato.</p>
-                            <p class="m-0">Calle Ponciano Aguilar 7 Guanajuato, Gto.</p>
-                        </div>
-                    </div>
-
-                </div>
 
                 <div class="row">
                     <div class="col-md-6 text-center text-md-center">
@@ -259,10 +221,12 @@
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">RECEPCIÓN</h4>
-                            <p class="text-uppercase mb-2">25 de Noviembre</p>
-                            <p class="text-uppercase mb-2">21:30 HRS</p>
-                            <p class="m-0">Misión Grand Casa Colorada.</p>
-                            <p class="m-0">Cerro de San Miguel 13, Col. Lomas de Pozuelos Guanajuato, Gto.</p>
+                            <p class="text-uppercase mb-2">09 de Noviembre</p>
+                            <p class="text-uppercase mb-2">19:00 HRS</p>
+                            <p class="m-0">Salón de eventos Hotel Tzalamha.</p>
+                            <p class="m-0">Aldea Los Pinos, San Jerónimo Baja Verapaz.</p>
+                            <a href="https://maps.app.goo.gl/DacPf2DKyW1bJiR69" class="btn btn-outline-primary fa-solid fa-map-location-dot">
+                                Ver mapa ></a>
                         </div>
                     </div>
 
@@ -276,7 +240,7 @@
                     <div class="col-md-6 text-center text-md-left">
                         <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
                             <h4 class="mb-2">CÓDIGO DE VESTIMENTA</h4>
-                            <p class="m-0">Formal.</p>
+                            <p class="m-0">Estilo Vaquero. <i class="fa-solid fa-hat-cowboy"></i></p>
                         </div>
                     </div>
 
@@ -287,54 +251,7 @@
     <!-- Story End -->
 
 
-    <!-- Gallery Start -->
-    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;">
-        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
-            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 15px;">Galería</h6>
-            <h1 class="font-secondary display-4 text-white">Almy Mariangel Samayoa Vanegas</h1>
-            <i class="far fa-heart text-white"></i>
-        </div>
 
-        <div class="owl-carousel gallery-carousel">
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-1.jpg" alt="">
-                <a href="img/gallery-1.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-2.jpg" alt="">
-                <a href="img/gallery-2.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-3.jpg" alt="">
-                <a href="img/gallery-3.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-4.jpg" alt="">
-                <a href="img/gallery-4.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-5.jpg" alt="">
-                <a href="img/gallery-5.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="img/gallery-6.jpg" alt="">
-                <a href="img/gallery-6.jpg" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Gallery End -->
 
 
     <!-- Event Start -->
@@ -342,7 +259,7 @@
         <div class="container pt-5 pb-3">
 
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 15px;">Mesa de regalos</h6>
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 10px;">Mesa de regalos</h6>
                 <i class="far fa-heart text-dark"></i>
             </div>
 
@@ -353,8 +270,7 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center bg-secondary">
-                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Su presencia en mi fiesta será el mejor regalo.
-                        Pero si deseas darme otro obsequio, puedes presentar regalo en sobre</h5>
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Su presencia en mi fiesta será el mejor regalo. Pero si deseas darme otro obsequio, puedes presentar regalo en sobre.</h5>
                 </div>
             </div>
 
@@ -368,20 +284,21 @@
         <div class="container py-5">
 
             <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 15px;">Confirmar Asistencia</h6>
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 10px;">Confirmar Asistencia</h6>
                 <i class="far fa-heart text-dark"></i>
             </div>
 
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
                     <h5 class="font-weight-normal text-muted mb-3 pb-3">Envía tu mensaje de confirmación de asistencia
-                        antes del 14 de noviembre, haciendo clic en el botón</h5>
+                        antes del 5 de noviembre, haciendo clic en el botón.</h5>
                 </div>
             </div>
 
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
-                    <a href="https://wa.me/50230953020" class="btn btn-outline-primary fab fa-whatsapp fa-beat"> WhatsApp</a>
+                    <a href="https://wa.me/50230953020" class="btn btn-outline-primary fab fa-whatsapp fa-beat">
+                        WhatsApp</a>
                 </div>
             </div>
 
