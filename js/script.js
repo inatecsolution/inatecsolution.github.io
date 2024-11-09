@@ -5,7 +5,7 @@ let secBox = document.getElementById("seconds");
 
 //Format: Date(year, month, day, hour, minute)
 //Year is counter from 0 to 11
-let endDate = new Date(2024, 10, 9, 7, 35);
+let endDate = new Date(2024, 11, 9, 18, 30);
 //Output value in milliseconds
 let endTime = endDate.getTime();
 function countdown() {
